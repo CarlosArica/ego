@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Documentación</title>
+		<link rel="icon" type="image/png" href="img/Bioinca.png">
+            <meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="css/estilos.css">
+			<link rel="stylesheet" href="css/estilos2.css">
+			<style type="text/css">
+* {
+
+list-style: none;
+text-decoration: none;
+box-sizing: border-box;
+}
+
+.contbody {
+
+position: relative;
+margin: auto;
+width: 100%;
+height: auto;
+}
+
+.filabody {
+
+position: relative;
+margin: auto;
+width: 100%;
+height: auto;
+}
+
+.col6a {
+
+float: left;
+width: 50%;
+background: #525659;
+border: 0px solid black;
+
+}
+
+.col6b {
+
+float: left;
+width: 50%;
+background: #000000;
+border: 1px solid black;
+
+}
+
+.col6c {
+
+float: left;
+width: 33.33333333%;
+background: #ffffff;
+border: 1px solid black;
+
+}
+			</style>
+			
+        </head>
+        <body>
+
+<ul style="margin-left:10%">
+  <li class="dropdown li">
+    <a href="#" class="dropbtn navbar" style="width:1%; margin-left:-10%"><img src="img/Bioinca-menú.png" style="width:50.3px; margin-top:-5px"></a>
+    <div style="margin-top: 50px; margin-left:-10%; position: fixed" class="dropdown-content">
+		  <a href="index.html">Bioinca</a>
+		  <a href="Taller.html">Inicio</a>
+		  <a href="Documentación.html">Documentación</a>
+		  <a href="Problemática.html">Problemática</a>
+		  <a href="Estado del arte.html">Estado del arte</a>
+	      <a href="Plan de Trabajo.html">Plan de Trabajo</a>
+		  <a href="Requerimientos de Diseño.html">Requerimientos de Diseño</a>
+		  <a href="Diseño Modular.html">Metodología de Diseño</a>
+		  <a href="Funcionalidad.html">Funcionalidad</a>
+		  <a href="mock-up.html">Mock-up</a>
+	</div>
+  </li>
+  <li class="dropdown li2">
+    <a href="#Resúmen" class="dropbtn2">Resúmen</a>
+    <div class="dropdown-content">
+	</div>
+  </li>
+  <li class="dropdown li2">
+    <a href="#Introducción" class="dropbtn2">Introducción</a>
+    <div class="dropdown-content">
+	</div>
+  </li>
+  <li class="dropdown li2">
+    <a href="#Antecedentes" class="dropbtn2">Antecedentes</a>
+    <div class="dropdown-content">
+	</div>
+  </li>
+  <li class="dropdown li2">
+    <a href="#Tendinosis" class="dropbtn2">Tendinosis</a>
+    <div class="dropdown-content">
+	</div>
+  </li>
+  <li class="dropdown li2">
+    <a href="#RehabilitaciónVirtual" class="dropbtn2">Rehabilitación Virtual</a>
+    <div class="dropdown-content">
+	</div>
+  </li>
+  <li class="dropdown li2">
+    <a href="#Bioinca" class="dropbtn2">Bioinca</a>
+    <div class="dropdown-content">
+	</div>
+  </li>
+  <li class="dropdown li2">
+    <a href="#ResultadosyConclusiones" class="dropbtn2">Resultados y Conclusiones</a>
+    <div class="dropdown-content">
+	</div>
+  </li>
+  <li class="dropdown li2">
+    <a href="#Referencias" class="dropbtn2">Referencias</a>
+    <div class="dropdown-content">
+	</div>
+  </li>
+</ul>
+<hr  style="margin-left:9.9%; margin-right:9.9%">			
+			<br>
+			
+			<h1 id=inicio align=center style="margin-left:12.4%; margin-right:9.9%">DISEÑO DE UNA PLATAFORMA ORIENTADA A LA MEDICIÓN DE VARIABLES PARA EL SEGUIMIENTO DE LA REHABILITACIÓN DE PACIENTES CON EPICONDILITIS LATERAL</h1>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			
+			<div class="contbody">
+	<div class="filabody">
+	
+		<div class="col6a">
+			
+			<div id="" style="margin-left:24.8%; margin-right:2.5%; color: black">
+			
+				<li id="Resúmen" ALIGN="justify">
+				<br>
+				<i><b>RESUMEN:</b> Las molestias generadas por el codo de tenista es algo que afecta del 1% al 3% de la población general, por eso se estima que 8 millones de personas necesitan cirugía y que 24 millones terminan ausentándose de su trabajo, uno de los principales problemas que tienen los pacientes al momento de seguir el tratamiento es el hecho de necesitar dejar de hacer o realizar los trabajos que necesitan o actividades que gustan o aman hacer, por ejemplo, un cocinero necesitaría dejar de cortar carne, un tenista necesitaría dejar de hacer dicho deporte, etc. Otro de los principales problemas es el hecho de que el método convencional de rehabilitación termina siendo aburrido y/o monótono, lo cual genera un desinterés o rechazo del paciente a realizarla. Debido a esto se vio la necesidad de hacer el tratamiento lo más corto posible y a la vez divertido e interactivo para el usuario. El MYO es un dispositivo capaz de captar movimiento del paciente mediante los 8 electrodos y su IMU de 9 ejes de libertad, para así realizar acciones sobre una consola de videojuegos; la KINECT logra, mediante su cámara y algoritmos, captar ángulos en movimiento generados por el paciente, generando medidas precisas del avance de este en la rehabilitación y/o tratamiento, además los videojuegos son una forma activa y capaz de generar en las personas una sensación de diversión y placer.</i>
+				</li>
+				<br>
+				<li ALIGN="justify">PALABRAS CLAVE: Epicondilitis lateral, PLOMEV, rehabilitación, seguimiento gradual, videojuegos.</li>
+				<br><br>
+				<li id=Introducción ALIGN="justify">1 INTRODUCCIÓN<br><br>
+
+PLOMEV es un sistema que permite la sinergia e integración de la rehabilitación, las señales mioeléctricas, el procesamiento gráfico y los juegos de video, para crear así un eficiente y rápido sistema de rehabilitación que le permite al paciente realizarla con mayor facilidad, eficacia y rapidez, mientras se divierte e interactúa con el juego de su agrado.</li>
+				<br>
+				<li ALIGN="justify">1.1 OBJETIVOS<br><br>
+<ol type="A" style="margin-left:7%">
+
+<li>Desarrollar y diseñar un sistema eficaz para la rehabilitación</li>
+<li>Integrar el MYO, la KINECT y los videojuegos</li>
+<li>Hacer a la rehabilitación interactiva y divertida</li>
+<li>Medir objetivamente el progreso de la rehabilitación</li>
+<li>Reducir el tiempo promedio que dura la rehabilitación</li>
+
+</ol>
+
+<br id=Antecedentes>
+
+2 ANTECEDENTES<br><br>
+
+2.1 CARACTERÍSTICAS GENERALES<br><br>
+
+</li>
+
+<li ALIGN="justify">
+</div></div></div></div>
+<div class="contbody">
+	<div class="filabody">
+	
+		<div class="col6a">
+		<div id="" style="text-align: justify; margin-left:7.5%; margin-right:19.9%; color: black">
+El epicóndilo es el área donde los músculos del antebrazo se unen al hueso lateral del codo. La epicondilitis lateral (Codo de tenista), que deriva a tendinosis, es una afección que produce dolor en el tendón (Fig.1)  (Fontaneda, 2014), lo cual puede generar problemas en situaciones como dar la mano, agarrar o sujetar un objeto, girar la perilla de una puerta, sostener una taza de café, etc (Mayo Clinic). Aunque se le denomine codo de tenista el problema puede generarse por otras actividades sean deportivas o no, se estima que los jugadores de tenis representan aproximadamente tan solo un 5% de los pacientes con esta enfermedad; no obstante, esta supone entre 75-85% de los problemas de codo en este deporte  (Fontaneda, 2014). El codo de golfista es una condición similar al codo de tenista, pero menos común. Se debe al uso excesivo de los músculos que usa para cerrar los puños.
+
+<br><br>
+
+<img src="img/Anatomía(codo).jpg" style="margin-left:12.4%; margin-right:9.9%cursor: zoom-in;" width="350px" height="350px">
+
+<br><br>
+
+<p align=center>Fig.1 Anatomía del codo.</p>
+
+<br>
+
+2.2 IMPACTO GLOBAL Y NACIONAL<br><br>
+
+La prevalencia de esta patología en la población general, es de aproximadamente el 1% al 3%, la presentación de la patología es igual en hombres que en mujeres, aunque en algunos estudios se sugiere alguna inclinación hacia uno u otro y la edad de presentación está entre 12 y 80 años con la mayoría de reportes en personas laboralmente activas (30 y 50 años), además un 30% de las personas con epicondilitis deben ausentarse de su trabajo y la incidencia es de 4 a 7 pacientes por cada 1000 habitantes al año  (Fontaneda, 2014).
+<br><br>
+</li>
+
+</div>
+</div></div>
+</div>
+
+<br><br>
+<br><br><hr style="margin-left:12.4%; margin-right:9.9%"><br><br>
+				<div class="contbody">
+	<div class="filabody">
+	
+		<div class="col6a">
+			
+			<div id="" style="margin-left:24.8%; margin-right:2.5%; color: black">
+				 <li  id="Tendinosis" ALIGN="justify">
+				 
+3 TENDINOSIS<br><br>
+				 3.1 SÍNTOMAS Y CAUSAS<br><br>
+
+Exceso de uso: la causa puede estar o no relacionada con
+la actividad laboral. Una actividad que aplica tensión en las
+uniones del tendón, a través de tensión en la unidad del
+músculo y el tendón extensor, aumenta la tensión sobre
+el tendón. Estas tensiones pueden deberse a agarrar una
+raqueta demasiado grande o a actividades de agarre y
+sujeción “repetitivas”, como p. ej. cortar carne, trabajos de
+plomería, pintura, tejido, etc (ASSH).<br><br>
+Traumatismo: un golpe directo en el codo podría provocar
+la inflamación del tendón, lo que podría producir una
+degeneración. Una acción, fuerza o actividad extrema
+repentina también pueden lesionar el tendón (ASSH), el dolor también se puede propagar al antebrazo y la muñeca (Mayo Clinic).
+<br>
+<br>
+El dolor es el motivo principal por el cual los pacientes
+acuden a una evaluación médica. El dolor se encuentra
+sobre la cara externa del codo, sobre la región ósea
+conocida como epicóndilo lateral. Esta área se vuelve
+sensible al tacto. El dolor también se produce por cualquier
+actividad que aplique tensión al tendón, como asir o
+levantar pesos. Con la actividad, el dolor suele comenzar
+en el codo y extenderse por el antebrazo hasta la mano.
+Ocasionalmente, cualquier movimiento del codo puede
+ser doloroso (ASSH).
+<br><br>
+3.2 PRUEBAS CLÍNICAS Y DIAGNÓSTICO<br><br>
+
+En muchos casos, tu historia clínica y la exploración física aportan al médico suficiente información para diagnosticar el codo de tenista. Pero si el médico considera que la causa de tus síntomas es otra, es posible que te sugiera realizar pruebas de rayos X u otras pruebas de diagnóstico por imágenes (Mayo Clinic).
+<br><br>
+3.2.1 TEST DE THOMPSON:<br><br>
+
+Prueba provocativa, hombro en flexión 
+de 60º, codo extendido, antebrazo en pronación y muñeca 
+en extensión de 30º. El examinador aplica una presión 
+moderada en el dorso del segundo o tercer metacarpiano 
+con lo cual se genera estrés al extensor carpiradialisbrevis 
+y longus  (Ruiz, 2011).
+<br><br>
+3.2.2 TEST DE LA SILLA:<br><br>
+
+Prueba provocativa, se le solicita al paciente 
+que levante una silla liviana con el codo extendido y el 
+antebrazo en supinación con el objetivo de desencadenar 
+dolor en el epicóndilo lateral  (Ruiz, 2011).
+<br><br>
+3.2.3 TEST DE BORDEN:<br><br>
+
+Prueba provocativa, se le pide al paciente 
+que comprima un manguito de tensiómetro manteniendo 
+una presión determinada  (Ruiz, 2011).
+<br><br>
+3.2.4 TESTE DE COZEN:<br><br>
+
+Se le ordena al paciente que realice flexión 
+de codo y extensión de muñeca contra resistencia para de 
+esta manera desencadenar el dolor  (Ruiz, 2011).
+
+</div></div>
+</div></div>
+<div class="contbody">
+	<div class="filabody">
+	
+		<div class="col6a">
+		<div id="" style="text-align: justify; margin-left:7.5%; margin-right:19.9%; color: black">
+
+<br><br>
+3.3 TRATAMIENTOS<br><br>
+
+</li>
+				 <li ALIGN="justify">
+
+Aunque el codo de tenista suele mejorar por si solo (Mayo Clinic), existen varios tratamientos que ayudan en la recuperación; además, se han encontrado evidencias científicas que avalan el uso de la terapia manipulativa en el tratamiento de la epicondilitis. Recomendamos por tanto el uso de manipulaciones en combinación con los tratamientos normalmente utilizados, para solapar sus efectos y obtener un mayor efecto beneficioso en la epicondilitis (C. Albacete-García, 2011).
+No obstante también es posible que no mejore y sea necesario si o si alguno de estos tratamientos. <br><br>Los métodos podemos dividirlos en Convencional (No quirúrgico) y Quirúrgico. 
+<br><br>
+En el caso del método convencional, este abarca varios tipos de tratamientos como la modificación de la actividad, terapia, proloterapia, tenotomía ultrasónica (TENEX), ondas de choque, etc.
+
+<br><br>
+
+3.3.1 DESCANSO<br><br>
+
+El primer paso hacia la recuperación es darle a su brazo el descanso adecuado. Esto significa que tendrá que suspender su participación en deportes o actividades de trabajo pesado durante varias semanas (Orthoinfo).
+ 
+<br><br>
+
+3.3.2 MEDICINAS ANTIINFLAMATORIAS NO ESTEROIDEAS (AINEs)<br><br>
+
+Los medicamentos como la aspirina o ibuprofeno reducen el dolor y la inflamación (Orthoinfo).
+
+<br><br>
+3.3.3 INYECCIONES DE ESTEROIDES<br><br>
+
+Los esteroides, como la cortisona, son medicinas antiinflamatorias muy efectivas. Su médico puede decidir inyectar un esteroide en el músculo dañado para aliviar los síntomas (Orthoinfo).
+
+<br><br>
+3.3.4 ORTESIS<br><br>
+
+Los dispositivos ortésicos prescritos a los pacientes con
+epicondilitis lateral se usan para disminuir la tensión que
+se genera a nivel de los tendones extensores, permitiéndoles
+un mayor tiempo de reparación. En teoría, el brace
+de antebrazo limita la expansión muscular y redirecciona
+la fuerza de los músculos extensores; por otro lado, la
+ortesis de muñeca limita la contracción de los músculos
+extensores del carpo permitiendo un descanso mecánico a
+su origen tendinoso  (Ruiz, 2011).
+<br>
+<br>
+A pesar de su uso amplio, actualmente no existe suficiente
+evidencia que determine su eficacia. En la revisión de
+Struijs y col. se compararon los dos tipos de dispositivos
+pero no se pudo determinar la superioridad de uno sobre
+el otro, aunque en la práctica, la mayoría de los médicos que
+tratan esta patología formula el brace de antebrazo  (Ruiz, 2011).
+
+<br><br><br><br>
+
+</li>
+
+</div>
+</div></div></div>
+<br><br><br><br><hr style="margin-left:12.4%; margin-right:9.9%"><br><br>
+
+<div class="contbody">
+	<div class="filabody">
+	
+		<div class="col6a">
+<div id="" style="margin-left:24.8%; margin-right:2.5%; color: black">
+				 <li ALIGN="justify">3.3.5 TERAPIA FÍSICA<br><br>
+
+Los ejercicios específicos son útiles para fortalecer los músculos del antebrazo. Su terapeuta también puede realizar un ultrasonido, dar masajes con hielo o usar técnicas que estimulan los músculos para mejorar la cicatrización del músculo (Orthoinfo). El protocolo clásico descrito por Nirschl hace ya varias décadas sigue vigente y se enfoca en el aumento progresivo de la fuerza, resistencia y estiramientos de los músculos del antebrazo. Este protocolo incorpora estiramiento de los 
+músculos extensores del carpo mediante la flexión de muñeca con codo en extensión y antebrazo en supinación combinado con ejercicios de fortalecimiento isométricos y concéntricos  (Ruiz, 2011).
+
+<br><br>
+3.3.6 TENOTOMÍA ULTRASÓNICA (TENEX)<br><br>
+
+En este procedimiento, con la guía de una ecografía, el médico introduce una aguja especial a través de la piel, en la parte dañada del tendón. La energía ultrasónica hace vibrar la aguja con tanta rapidez que el tejido dañado se licua y puede succionarse (Mayo Clinic).
+
+<br><br>
+
+3.3.7 TERAPIA DE ONDAS DE CHOQUE EXTRACORPOREA<br><br>
+
+Las ondas de choque son ondas acústicas sencillas las
+cuales disipan energía mecánica en una interfase de dos
+sustancias con diferente impedancia acústica; son producidas
+por un generador de energía eléctrica y requieren un
+mecanismo de conversión electroacústica y un dispositivo
+de centrado  (Ruiz, 2011).
+<br><br>
+El mecanismo por el cual estas ondas mejoran la sintomatología
+clínica no se conoce bien, pero diferentes teorías
+incluyen el bloqueo de nociceptores, que tiene efectos
+sobre la permeabilidad celular que inducen una reparación
+progresiva del daño entre otros  (Ruiz, 2011).
+<br><br>
+Actualmente hay evidencia contradictoria con respecto a
+los resultados clínicos; sin embargo, en la última revisión
+de Buchbinder publicada en 2005 y actualizada en 2009
+se concluyó que había una mínima mejoría de pacientes
+tratados con onda de choque extracorpórea, comparados
+con pacientes que recibieron placebo  (Ruiz, 2011).
+
+<br><br>
+
+3.3.8 REVISIÓN DEL EQUIPO<br><br>
+
+Si participa en un deporte de raqueta, su médico puede animarlo a que mande a revisar su equipo para verificar si es adecuado para usted. 
+</div></div></div></div>
+<div class="contbody">
+	<div class="filabody">
+	
+		<div class="col6a">
+		<div id="" style="text-align: justify; margin-left:7.5%; margin-right:19.9%; color: black">
+
+Las raquetas más rígidas y con cuerdas más flojas a menudo pueden reducir el esfuerzo en el antebrazo, lo que significa que los músculos del antebrazo no tienen que trabajar tanto. Si usa una raqueta demasiado grande, cambiar a una más pequeña puede ayudar a prevenir que se repitan los síntomas (Orthoinfo).
+
+
+<br><br>
+3.3.9 QUIRÚRGICO<br><br>
+
+Aproximadamente el 90% de los casos se soluciona con el tratamiento convencional (Fontaneda, 2014), pero si los síntomas no mejoran después de 6 a 12 meses de un prolongado tratamiento no quirúrgico, puedes ser candidato a una cirugía para extirpar el tejido dañado. Estos procedimientos pueden realizarse a través de una incisión grande o de varias incisiones pequeñas. Los ejercicios de rehabilitación son fundamentales para la recuperación (Mayo Clinic). Al igual que con cualquier cirugía, existen riesgos con la cirugía de codo de tenista. La mayoría de los aspectos más comunes a considerar incluyen:
+<br><br>
+
+<ol style="margin-left:7%" start=1>	
+	
+	<li>Infección</li>
+	<li>Daños a nervios y vasos sanguíneos</li>
+	<li>Posible rehabilitación prolongada</li>
+	<li>Pérdida de fuerza</li>
+	<li>Pérdida de flexibilidad</li>
+	<li>La necesidad de más cirugías</li>
+
+</ol>
+<br>
+3.4 CLASIFICACIÓN DE NIRSCHL<br><br>
+
+	<p align=center><i>Tabla 1.</i> Clasificación de las fases de epicondilitis lateral de Nirschl</p><br>
+
+</li>
+		
+				<li ALIGN="justify">
+
+
+	<table border=6>
+		
+		<thead>
+			
+			<tr><th align=center>Fase</th><th align=center>Descripción de nivel de dolor en epicondilitis</th></tr>
+			
+		</thead>
+			
+		<tbody>
+			
+			<tr><td align=center>I</td><td align=center>Dolor moderado posterior a ejercicio que dura menos de 24 horas</td></tr>
+			<tr><td align=center>II</td><td align=center>Dolor después de ejercicio que dura más de 48 horas y resuelve con medios físicos</td></tr>
+			<tr><td align=center>III</td><td align=center>Dolor con ejercicio pero no es limitante</td></tr>
+			<tr><td align=center>IV</td><td align=center>Dolor con ejercicio y lo limita</td></tr>
+			<tr><td align=center>V</td><td align=center>Dolor con AVD pesadas</td></tr>
+			<tr><td align=center>VI</td><td align=center>Dolor con AVD ligeras; dolor intermitente durante el reposo pero no interfiere con el sueño</td></tr>
+			<tr><td align=center>VII</td><td align=center>Dolor constante en reposo, interfiere con el sueño</td></tr>
+			
+		</tbody>
+		
+	</table>
+	AVD: Actividades de la vida diaria  (Ruiz, 2011).<br><br><br>
+					</div></div>
+</div></div>
+
+<br><br><br><br><br><hr style="margin-left:12.4%; margin-right:9.9%"><br><br>
+
+<div class="contbody">
+	<div class="filabody">
+	
+		<div class="col6a">
+<div id="" style="text-align: justify; margin-left:24.8%; margin-right:2.5%; color: black">
+					4 REHABILITACIÓN VIRTUAL<br><br>
+
+Los sistemas de juego que promueven actividades pueden alentar 
+la actividad (especialmente en individuos sedentarios) y complementar 
+la rehabilitación. Tanto la Wii y la DDR han mostrado incrementar la 
+EE comparado con los videojuegos inactivos y son comparables con la 
+caminata (pero no con los deportes mismos). Mejorar la actividad física 
+en los ancianos sedentarios puede ser el siguiente foco de investigación. 
+La literatura también muestra que las lesiones relacionadas con el juego 
+son usualmente una consecuencia de juego excesivo. Debe recordarse que 
+las lesiones que presentamos, aunque serias, son raras cuando consideras 
+que, por ejemplo, 75 millones de consolas Wii están vendidas en todo el 
+mundo. En entornos de rehabilitación, la evidencia anecdótica y una serie 
+de estudios de casos han proporcionado resultados alentadores que apoyan 
+el uso de juegos. Sin embargo, allí esta una escasez de trabajos investigando 
+sus usos en estudios a mayor escala. Una potencial limitación de los juegos 
+comerciales disponibles y sistemas de juego, aunque ellos fomenten 
+mejoras en el equilibrio, fuerza y ​​el estado físico, es que ellos no son 
+necesariamente diseñados para rehabilitación. El trabajo futuro puede 
+desear diseñar juegos más específicos para complementar la rehabilitación que 
+este enfocada en las necesidades del usuario. Por ejemplo, González-Fernández et al. 
+desarrolló un Sistema de Rehabilitación Virtual de Equilibrio fácil (el Sistema eBaViR), 
+que utiliza juegos específicos diseñados para la rehabilitación de desórdenes 
+del equilibrio (Matthew J. D. Taylor, 2011).
+<br><br>El actual trabajo en este campo es contradictorio y no hay un consenso 
+con respecto a la duración / intensidad del entrenamiento y los 
+resultados utilizados para evaluar la efectividad clínica de una 
+intervención de exergaming. Además, el RCT definitivo aún no se ha 
+llevado a cabo comparando exergaming con el ejercicio tradicional. 
+Un número de estudios sugieren que los exergames son agradables y 
+podrían ser efectivos en mejorar la adherencia a la rehabilitación. 
+Si bien la ventaja de usar la Wii como herramienta de rehabilitación 
+parece ser su facilidad de uso y su valor de entretenimiento, debe 
+recordarse que es un juego. Por lo tanto, no es una herramienta 
+la cual este diseñada para una específica necesidad de rehabilitación. 
+El Kinect permite que se desarrolle un software cual se pueda adaptar a 
+una población clínica específica que puede ofrecer al usuario y al 
+especialista en rehabilitación un mejor alcance para mejorar los 
+resultados. A pesar de la falta de evidencia de calidad en el 
+presente, creemos que las deficiencias en la forma en que esta 
+tecnología se ha utilizado e investigado hasta la fecha puede ser 
+superada, lo que permite que se convierta en una parte rutinaria del 
+repertorio de estrategias de rehabilitación para PwMS (Taylor, 2014).
+</li><br><br id=Bioinca>
+</div></div>
+</div></div>
+
+<div class="contbody">
+	<div class="filabody">
+	
+		<div class="col6a">
+		<div id="" style="text-align: justify; margin-left:7.5%; margin-right:19.9%; color: black">
+
+5 BIOINCA<br><br>
+
+Es una organización fundada y desarrollada por 4 personas que buscan implementar métodos innovadores enfocados en la rehabilitación mediante diseños y propuestas relacionados a un entorno virtual y tecnológico para mejorar la calidad de servicio y atención al cliente, usuario y/o paciente..
+<br><br>
+
+
+4.1 MYO
+<br><br>
+Es un dispositivo de reconocimiento de gestos usado en el antebrazo y fabricado por Thalmic Labs. El Myo permite al usuario controlar la tecnología de forma inalámbrica utilizando movimientos del usuario. Utiliza un conjunto de sensores electromiográficos (EMG) que detectan la actividad eléctrica en los músculos del antebrazo, combinados con un giroscopio, un acelerómetro y un magnetómetro para reconocer los gestos. El Myo se puede usar para controlar videojuegos, presentaciones, música, entretenimiento visual y otros.
+<br><br>
+4.1.1 MYO Y CRATE WHACKE
+<br><br>
+L.
+<br><br>
+4.2 KINECT
+<br><br>
+
+Es una cámara de profundidad que es usada en particular en la industria de los videojuegos para capturar los movimientos de las personas y los jugadores de forma eficiente, utilizando la tecnología de una cámara RGB y la cámara de infrarrojos para diferenciar la profundidad.
+
+
+<br><br>
+
+4.2.1 KINECT Y EL PACIENTE
+<br><br>
+L.
+
+<br><br>
+Es una organización fundada y desarrollada por 4 personas que buscan implementar métodos innovadores enfocados en la rehabilitación mediante diseños y propuestas relacionados a un entorno virtual y tecnológico para mejorar la calidad de servicio y atención al cliente, usuario y/o paciente..
+<br><br>
+
+
+4.1 MYO
+<br><br>
+Es un dispositivo de reconocimiento de gestos usado en el antebrazo y fabricado por Thalmic Labs. El Myo permite al usuario controlar la tecnología de forma inalámbrica utilizando movimientos del usuario. Utiliza un conjunto de sensores electromiográficos (EMG) que detectan la actividad eléctrica en los músculos del antebrazo, combinados con un giroscopio, un acelerómetro y un magnetómetro para reconocer los gestos. El Myo se puede usar para controlar videojuegos, presentaciones, música, entretenimiento visual y otros.
+<br><br>
+4.1.1 MYO Y CRATE WHACKE
+<br><br><br>	
+				<li ALIGN="justify">
+				</div></div></div>
+</div>		<hr style="margin-left:9.9%; margin-right:9.9%; margin-top: 0%">			
+<br>	<br>	
+<div class="contbody">
+	<div class="filabody">
+	
+		<div class="col6a">
+<div id="" style="margin-left:24.8%; margin-right:2.5%; color: black">
+<li id=ResultadosyConclusiones ALIGN="justify">
+6 RESULTADOS Y CONCLUSIONES<br><br>
+
+Se logró integrar el MYO y la KINECT usando el juego Crate Whacker y una PC windows, con lo cual el paciente tiene la libertad de mover el brazo, sea derecho o izquierdo, y usarlo no solo para poder seguir gradualmente el progreso de la rehabilitación y así optimizarla, sino para realizar su rehabilitación en sí y lograr disminuir en el paciente el rechazo a realizar durante un tiempo prolongado la rehabilitación establecida. Se espera en un próximo trabajo poder desarrollar juegos personalizados para cada tipo de pacientes y según sus preferencias.
+
+<br><br>
+</li>
+</div></div>
+</div></div>
+
+<div class="contbody">
+	<div class="filabody">
+	
+		<div class="col6a">
+		<div id="" style="text-align: justify; margin-left:7.5%; margin-right:19.9%; color: black">
+	
+
+7 REFERENCIAS<br id=Referencias><br>
+
+(2018). Retrieved from <a style="color:#551A8B; text-decoration:none" href="http://www.assh.org/Portals/1/ESP%20-%20Tennis%20Elbow.pdf?ver=2017-01-10-150420-563">http://www.assh.org/Portals/1/ESP%20-%20Tennis%20Elbow.pdf?ver=2017-01-10-150420-563</a>
+<br><br>
+Albacete-García, C., Valenza, M., Bueno Sanchez, J., Martin Martin, L., Cobo Montejo, M., & Bonilla Martinez, S. (2011). Terapia manual en la epicondilitis: una revisión sistemática de ensayos clínicos. Revista Iberoamericana De Fisioterapia Y Kinesiología, 14(1), 20-24. doi: 10.1016/j.rifk.2011.05.001
+<br><br>
+Chaustre Ruiz, D. (2011). Epicondilitis lateral: conceptos de actualidad. Revisión de tema. Revista Med, 19(1), 74. doi: 10.18359/rmed.1217
+<br><br>
+Codo de tenista (epicondilitis lateral) (Tennis Elbow (Lateral Epicondylitis)) - OrthoInfo - AAOS. (2018). Retrieved from <a style="color:#551A8B; text-decoration:none" href="https://orthoinfo.aaos.org/es/diseases--conditions/codo-de-tenista-epicondilitis-lateral-tennis-elbow-lateral-epicondylitis/">https://orthoinfo.aaos.org/es/diseases--conditions/codo-de-tenista-epicondilitis-lateral-tennis-elbow-lateral-epicondylitis/</a>
+<br><br>
+Codo de tenista - Diagnóstico y tratamiento - Mayo Clinic. (2018). Retrieved from <a style="color:#551A8B; text-decoration:none" href=https://www.mayoclinic.org/es-es/diseases-conditions/tennis-elbow/diagnosis-treatment/drc-20351991>https://www.mayoclinic.org/es-es/diseases-conditions/tennis-elbow/diagnosis-treatment/drc-20351991</a>
+<br><br>
+Codo de tenista - Síntomas y causas - Mayo Clinic. (2018). Retrieved from <a style="color:#551A8B; text-decoration:none" href=https://www.mayoclinic.org/es-es/diseases-conditions/tennis-elbow/symptoms-causes/syc-20351987>https://www.mayoclinic.org/es-es/diseases-conditions/tennis-elbow/symptoms-causes/syc-20351987</a>
+<br><br>
+Fuente Fontaneda, H. (2014). Tratamiento de la epicondilitis: Inyección de corticosteroides vs fisioterapia. Licenciatura. Universidad de Valladolid.
+<br><br>
+orthoinfo. (2018). a00765f01.jpg [Image]. Retrieved from <a style="color:#551A8B; text-decoration:none" href=https://orthoinfo.aaos.org/globalassets/figures/a00765f01.jpg>https://orthoinfo.aaos.org/globalassets/figures/a00765f01.jpg</a>
+<br><br>
+
+			</div></div></div>
+</div>
+			
+			<br><br><br><br><br><br><br>
+
+			<hr style="margin-left:9.9%; margin-right:9.9%; margin-top: 0%">			
+			<br>
+			
+			<p style="font-size: 100%; margin-left:9.9%; margin-right:9.9%">
+			
+			<img src="img/cc_icon_white_x2.png" width="1.5%" height="1.5%">
+			<img src="img/attribution_icon_white_x2.png" width="1.5%" height="1.5%">
+			<img src="img/nc_white_x2.png" width="1.5%" height="1.5%">
+			
+			Salvo que se indique lo contrario, el contenido de este sitio tiene una licencia bajo Attribution-NonCommercial 4.0 Unported (CC BY-NC 4.0) <a href="doc/Bioinca.pdf"><input type=submit value="descargar pdf"></a>
+			</p>
+			<br>
+	    </body>
+	</html>

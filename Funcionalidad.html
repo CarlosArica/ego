@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Funcionalidad</title>
+		<link rel="icon" type="image/png" href="img/Bioinca.png">
+            <meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="css/estilos4.css">
+            <link rel="stylesheet" href="css/estilos.css">
+			<link rel="stylesheet" href="css/estilos2.css">
+			<style type="text/css">
+
+			</style>
+			
+        </head>
+        <body>
+
+<ul style="margin-left:10%">
+  <li class="dropdown li">
+    <a href="#" class="dropbtn navbar" style="width:1%; margin-left:-10%"><img src="img/Bioinca-menú.png" style="width:50.3px; margin-top:-5px"></a>
+    <div style="margin-top: 50px; margin-left:-10%; position: fixed" class="dropdown-content">
+		  <a href="index.html">Bioinca</a>
+		  <a href="Taller.html">Inicio</a>
+		  <a href="Documentación.html">Documentación</a>
+		  <a href="Problemática.html">Problemática</a>
+		  <a href="Estado del arte.html">Estado del arte</a>
+	      <a href="Plan de Trabajo.html">Plan de Trabajo</a>
+		  <a href="Requerimientos de Diseño.html">Requerimientos de Diseño</a>
+		  <a href="Diseño Modular.html">Metodología de Diseño</a>
+		  <a href="Funcionalidad.html">Funcionalidad</a>
+		  <a href="mock-up.html">Mock-up</a>
+	</div>
+  </li>
+  <li class="dropdown li2">
+    <p href="#Resúmen" class="dropbtn2" style="color:#525659">BIOINCA</p>
+    <div class="dropdown-content">
+	</div>
+  </li>
+  <li class="dropdown li2">
+    <div class="dropdown-content">
+	</div>
+  </li>
+  <li class="dropdown li2">
+    <div class="dropdown-content">
+	</div>
+  </li>
+  <li class="dropdown li2">
+    <div class="dropdown-content">
+	</div>
+  </li>
+  <li class="dropdown li2">
+    <div class="dropdown-content">
+	</div>
+  </li>
+  <li class="dropdown li2">
+    <div class="dropdown-content">
+	</div>
+  </li>
+  <li class="dropdown li2">
+    <div class="dropdown-content">
+	</div>
+  </li>
+  <li class="dropdown li2">
+    <div class="dropdown-content">
+	</div>
+  </li>
+</ul>
+<hr  style="margin-left:9.9%; margin-right:9.9%">
+<br>
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <iframe class="mySlides" style="margin-left:-5.9%; border: 2px solid #000000; padding: 3px 4px; background-color: #891516" width="900" height="510" src="https://docs.google.com/document/d/e/2PACX-1vRj0hnLyBJYwS9kkGK5wbZNJ-5IRM5nDz4KuOCfmj0j0x1P1eU63WUL2oqeGg4W1pTPoR5vNn4vytfA/pub?embedded=true" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <iframe class="mySlides" style="margin-left:-5.9%; border: 2px solid #000000; padding: 3px 4px; background-color: #891516" width="900" height="510" src="https://docs.google.com/presentation/d/e/2PACX-1vSDQF55VtSpNAeEg-bZyNX2Y05u_Sry1fHcBme77c-L1wvFszxTHaJB0lMUSadOg6-xn4x5_rJ9IF2y/embed?start=false&loop=false&delayms=3000" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <iframe class="mySlides" style="margin-left:-5.9%; border: 2px solid #000000; padding: 3px 4px; background-color: #891516" width="900" height="510" src="https://docs.google.com/presentation/d/e/2PACX-1vRx78Fnr7xXNv7DH6tWIiRm5G_0G5T3GmyGylKAXy1kwy1CkYif4CjR95U5DGudom7Aktg8khHjZwUu/embed?start=false&loop=false&delayms=3000" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+	  <iframe style="margin-left: 18%; margin-top: 8%; border: 0px solid #000000; padding: 3px 4px; background-color: #none" width="900" height="510" src="doc/los 4 para la pagina.pdf" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+						
+			<br>
+			<hr style="margin-left:9.9%; margin-right:9.9%; margin-top: 0%">			
+			<br>
+			
+			<p style="font-size: 100%; margin-left:9.9%; margin-right:9.9%">
+			
+			<img src="img/cc_icon_white_x2.png" width="1.5%" height="1.5%">
+			<img src="img/attribution_icon_white_x2.png" width="1.5%" height="1.5%">
+			<img src="img/nc_white_x2.png" width="1.5%" height="1.5%">
+			
+			Salvo que se indique lo contrario, el contenido de este sitio tiene una licencia bajo Attribution-NonCommercial 4.0 Unported (CC BY-NC 4.0)
+			</p>
+			<br>
+	    </body>
+	</html>
