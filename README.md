@@ -1,2 +1,2 @@
 # ego
-Página para los cursos de Taller de Proyectos I y Como Desarrollar Servicios y Productos Disruptivos
+Página para los cursos de Ingeniería Biomédica con Taller de Proyectos I y Cómo Desarrollar Servicios y Productos Disruptivos
